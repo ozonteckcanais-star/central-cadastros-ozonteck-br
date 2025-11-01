@@ -48,7 +48,7 @@ export async function analisarLinkHtml({ url }){
   try{
     // Baixa HTML
     const html = await axios.get(url).then(r=>r.data);
-    const prompt = "Leia o HTML a seguir e extraia *apenas* o nome do patrocinador presente no formulário de cadastro. Responda em JSON: { "nomeNoLink": "..." }";
+    const prompt = ´Leia o HTML a seguir e extraia *apenas* o nome do patrocinador presente no formulário de cadastro. Responda em JSON: { "nomeNoLink": "..." }´;
     const rsp = await axios.post('https://api.openai.com/v1/chat/completions', {
       model: "gpt-4o-mini",
       messages: [
