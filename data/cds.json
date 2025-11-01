@@ -1,0 +1,29 @@
+[
+  {
+    "id": "cd-queimados-rj",
+    "cidade": "Queimados",
+    "estado": "RJ",
+    "nome": "CD Queimados",
+    "responsavel": "Alex Victor dos Anjos Silva",
+    "endereco": "Av. Vereador Marinho Hemeterio de Oliveira, Queimados - RJ",
+    "whatsapp": "+5521982892949",
+    "geo": {
+      "lat": -22.7108,
+      "lng": -43.555
+    }
+  },
+  {
+    "id": "cd-jacarepagua-rj",
+    "cidade": "Rio de Janeiro",
+    "bairro": "Jacarepaguá",
+    "estado": "RJ",
+    "nome": "CD Jacarepaguá",
+    "responsavel": "Equipe Local",
+    "endereco": "Jacarepaguá, Rio de Janeiro - RJ",
+    "whatsapp": "+5521XXXXXXXXX",
+    "geo": {
+      "lat": -22.9491,
+      "lng": -43.365
+    }
+  }
+]
