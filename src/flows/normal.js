@@ -29,7 +29,10 @@ export async function fluxoNormal(ctx){
     let estado = (parts[1]||'').toUpperCase();
     const data = db.get();
     const allCds = JSON.parse(fs.readFileSync('data/cds.json','utf-8'));
-    const naCidade = allCds.filter(cd => (cd.cidade||'').toLowerCase()===cidade.toLowerCase() and (cd.estado||'').upper()===(estado||'').upper());
+    const naCidade = allCds.filter(cd =>
+  (cd.cidade || '').toLowerCase() === cidade.toLowerCase() &&
+  (cd.estado || '').toUpperCase() === (estado || '').toUpperCase()
+);
     let msg;
     if (naCidade.length){
       msg = UI.cdEncontrado(naCidade);
